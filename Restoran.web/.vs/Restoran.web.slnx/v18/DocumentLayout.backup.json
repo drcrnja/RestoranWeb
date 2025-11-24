@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\controllers\\rezervacijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:controllers\\rezervacijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\data\\datarestorancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:data\\datarestorancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\views\\rezervacija\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:views\\rezervacija\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\models\\sto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:models\\sto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\models\\gost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:models\\gost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|c:\\users\\drcrn\\desktop\\seminarski radovi\\arhitektura\\restoran.web\\restoran.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{10B55AFD-C25A-7630-0488-EDBB6EEC5729}|Restoran.web.csproj|solutionrelative:restoran.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T16:20:35.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataRestoranContext.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Data\\DataRestoranContext.cs",
+              "RelativeDocumentMoniker": "Data\\DataRestoranContext.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Data\\DataRestoranContext.cs",
+              "RelativeToolTip": "Data\\DataRestoranContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T16:19:14.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rezervacija.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Models\\Rezervacija.cs",
+              "RelativeDocumentMoniker": "Models\\Rezervacija.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Models\\Rezervacija.cs",
+              "RelativeToolTip": "Models\\Rezervacija.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T16:15:15.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RezervacijaController.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Controllers\\RezervacijaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RezervacijaController.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Controllers\\RezervacijaController.cs",
+              "RelativeToolTip": "Controllers\\RezervacijaController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAzwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T16:39:21.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-22T16:35:33.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Views\\Rezervacija\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Rezervacija\\Create.cshtml",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Views\\Rezervacija\\Create.cshtml",
+              "RelativeToolTip": "Views\\Rezervacija\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvykAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T17:05:59.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sto.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Models\\sto.cs",
+              "RelativeDocumentMoniker": "Models\\sto.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Models\\sto.cs",
+              "RelativeToolTip": "Models\\sto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T16:14:59.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "gost.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Models\\gost.cs",
+              "RelativeDocumentMoniker": "Models\\gost.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Models\\gost.cs",
+              "RelativeToolTip": "Models\\gost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T16:13:43.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Restoran.web.csproj",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Restoran.web.csproj",
+              "RelativeDocumentMoniker": "Restoran.web.csproj",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\Restoran.web\\Restoran.web.csproj",
+              "RelativeToolTip": "Restoran.web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-21T16:09:40.699Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
