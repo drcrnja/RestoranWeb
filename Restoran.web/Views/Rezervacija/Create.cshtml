@@ -1,56 +1,44 @@
 @model Restoran.web.Models.Rezervacija
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Unos rezervacije";
 }
 
-<h1>Create</h1>
+<h2>Unos rezervacije</h2>
 
-<h4>Rezervacija</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Datum" class="control-label"></label>
-                <input asp-for="Datum" class="form-control" />
-                <span asp-validation-for="Datum" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Vreme" class="control-label"></label>
-                <input asp-for="Vreme" class="form-control" />
-                <span asp-validation-for="Vreme" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BrojOsoba" class="control-label"></label>
-                <input asp-for="BrojOsoba" class="form-control" />
-                <span asp-validation-for="BrojOsoba" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-    <label>Ime gosta</label>
-    <input name="ImeGosta" class="form-control" required />
-</div>
+<form action="/Rezervacija/Create" method="post">
+    @Html.AntiForgeryToken()
 
-<div class="form-group">
-    <label>Prezime gosta</label>
-    <input name="PrezimeGosta" class="form-control" required />
-</div>
-            <div class="form-group">
-    <label>Broj stola</label>
-    <select name="IDStola" class="form-control" asp-items="ViewBag.Stolovi"></select>
-</div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    <div class="form-group">
+        <label>Datum</label>
+        <input name="Datum" type="datetime-local" class="form-control" required />
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div class="form-group">
+        <label>Vreme</label>
+        <input name="Vreme" type="time" class="form-control" required />
+    </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <div class="form-group">
+        <label>Broj osoba</label>
+        <input name="BrojOsoba" type="number" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Ime gosta</label>
+        <input name="ImeGosta" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Prezime gosta</label>
+        <input name="PrezimeGosta" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Broj stola</label>
+        <select name="IDStola" class="form-control" asp-items="ViewBag.Stolovi"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kreiraj rezervaciju</button>
+    <a href="/Rezervacija/Index" class="btn btn-secondary">Back to List</a>
+</form>

@@ -54,10 +54,17 @@ namespace Restoran.web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-            [Bind("IDRezervacije,Datum,Vreme,BrojOsoba,IDStola")] Rezervacija rezervacija,
+            [Bind("IDRezervacije,Datum,Vreme,BrojOsoba,IDGosta,IDStola")] Rezervacija rezervacija,
             string ImeGosta,
             string PrezimeGosta)
         {
+            System.Diagnostics.Debug.WriteLine("👉 CREATE METODA POZVANA");
+            System.Diagnostics.Debug.WriteLine($"Ime: {ImeGosta}, Prezime: {PrezimeGosta}, Datum: {rezervacija.Datum}, Sto: {rezervacija.IDStola}");
+
+            // IGNORIŠEMO ModelState greške za navigacione objekte – mi ih popunjavamo ručno
+            ModelState.Remove(nameof(Rezervacija.Gost));
+            ModelState.Remove(nameof(Rezervacija.Sto));
+
             if (ModelState.IsValid)
             {
                 // pronađi ili dodaj gosta
@@ -72,8 +79,6 @@ namespace Restoran.web.Controllers
                 }
 
                 rezervacija.IDGosta = gost.IDGosta;
-
-                // generiši novi ID
                 rezervacija.IDRezervacije = _context.Rezervacije.Any() ? _context.Rezervacije.Max(r => r.IDRezervacije) + 1 : 1;
 
                 _context.Rezervacije.Add(rezervacija);
@@ -81,7 +86,6 @@ namespace Restoran.web.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // ponovo popuni padajuću listu ako model nije validan
             ViewBag.Stolovi = new SelectList(_context.Stolovi, "IDStola", "BrojStola");
             return View(rezervacija);
         }
