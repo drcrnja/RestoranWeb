@@ -1,162 +1,220 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Restoran.web.Data;
 using Restoran.web.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Restoran.web.Controllers
 {
     public class RezervacijaController : Controller
     {
         private readonly RestoranContext _context;
+        public RezervacijaController(RestoranContext context) => _context = context;
 
-        public RezervacijaController(RestoranContext context)
-        {
-            _context = context;
-        }
-
-        // GET: Rezervacija
-        public async Task<IActionResult> Index()
-        {
-            var restoranContext = _context.Rezervacije
-                .Include(r => r.Gost)
-                .Include(r => r.Sto);
-            return View(await restoranContext.ToListAsync());
-        }
-
-        // GET: Rezervacija/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null) return NotFound();
-
-            var rezervacija = await _context.Rezervacije
+        // READ
+        public async Task<IActionResult> Index() =>
+            View(await _context.Rezervacije
                 .Include(r => r.Gost)
                 .Include(r => r.Sto)
-                .FirstOrDefaultAsync(m => m.IDRezervacije == id);
+                .ToListAsync());
 
-            if (rezervacija == null) return NotFound();
-
-            return View(rezervacija);
-        }
-
-        // GET: Rezervacija/Create
-        public IActionResult Create()
+        // CREATE
+        public async Task<IActionResult> Create()
         {
-            ViewBag.Stolovi = new SelectList(_context.Stolovi, "IDStola", "BrojStola");
+            await PopuniStoloveCreate(null);   // MORA DA POSTOJI
             return View();
         }
 
-        // POST: Rezervacija/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(
-            [Bind("IDRezervacije,Datum,Vreme,BrojOsoba,IDGosta,IDStola")] Rezervacija rezervacija,
-            string ImeGosta,
-            string PrezimeGosta)
+        public async Task<IActionResult> Create(DateTime Datum, TimeSpan Vreme,
+                                                int BrojOsoba, int IDStola,
+                                                string ImeGosta, string PrezimeGosta)
         {
-            System.Diagnostics.Debug.WriteLine("👉 CREATE METODA POZVANA");
-            System.Diagnostics.Debug.WriteLine($"Ime: {ImeGosta}, Prezime: {PrezimeGosta}, Datum: {rezervacija.Datum}, Sto: {rezervacija.IDStola}");
+            bool zauzet = await _context.Rezervacije
+                .AnyAsync(r => r.IDStola == IDStola && r.Datum == Datum);
 
-            // IGNORIŠEMO ModelState greške za navigacione objekte – mi ih popunjavamo ručno
-            ModelState.Remove(nameof(Rezervacija.Gost));
-            ModelState.Remove(nameof(Rezervacija.Sto));
-
-            if (ModelState.IsValid)
+            if (zauzet)
             {
-                // pronađi ili dodaj gosta
-                var gost = await _context.Gosti
-                    .FirstOrDefaultAsync(g => g.ImeGosta == ImeGosta && g.PrezimeGosta == PrezimeGosta);
+                var brojStola = await _context.Stolovi
+                    .Where(s => s.IDStola == IDStola)
+                    .Select(s => s.BrojStola)
+                    .FirstOrDefaultAsync();
 
-                if (gost == null)
-                {
-                    gost = new Gost { ImeGosta = ImeGosta, PrezimeGosta = PrezimeGosta };
-                    _context.Gosti.Add(gost);
-                    await _context.SaveChangesAsync();
-                }
-
-                rezervacija.IDGosta = gost.IDGosta;
-                rezervacija.IDRezervacije = _context.Rezervacije.Any() ? _context.Rezervacije.Max(r => r.IDRezervacije) + 1 : 1;
-
-                _context.Rezervacije.Add(rezervacija);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ModelState.AddModelError("", $"Sto br. {brojStola} je već rezervisan za {Datum:d}.");
+                await PopuniStoloveCreate(Datum);
+                return View();
             }
 
-            ViewBag.Stolovi = new SelectList(_context.Stolovi, "IDStola", "BrojStola");
-            return View(rezervacija);
+            var gost = await _context.Gosti
+                .FirstOrDefaultAsync(g => g.ImeGosta == ImeGosta &&
+                                          g.PrezimeGosta == PrezimeGosta);
+
+            if (gost == null)
+            {
+                gost = new Gost { ImeGosta = ImeGosta, PrezimeGosta = PrezimeGosta };
+                _context.Gosti.Add(gost);
+                await _context.SaveChangesAsync();
+            }
+
+            var rez = new Rezervacija
+            {
+                Datum = Datum,
+                Vreme = Vreme,
+                BrojOsoba = BrojOsoba,
+                IDStola = IDStola,
+                IDGosta = gost.IDGosta
+            };
+
+            _context.Rezervacije.Add(rez);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Rezervacija/Edit/5
+        // EDIT
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
+            var rez = await _context.Rezervacije.FindAsync(id);
+            if (rez == null) return NotFound();
 
-            var rezervacija = await _context.Rezervacije.FindAsync(id);
-            if (rezervacija == null) return NotFound();
-
-            ViewBag.Stolovi = new SelectList(_context.Stolovi, "IDStola", "BrojStola", rezervacija.IDStola);
-            return View(rezervacija);
+            ViewBag.Gosti = new SelectList(await _context.Gosti.ToListAsync(),
+                                           "IDGosta", "ImeGosta", rez.IDGosta);
+            ViewBag.Stolovi = await PopuniStoloveEdit(rez.Datum, rez.IDStola); // MORA DA POSTOJI
+            return View(rez);
         }
 
-        // POST: Rezervacija/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id,
-            [Bind("IDRezervacije,Datum,Vreme,BrojOsoba,IDGosta,IDStola")] Rezervacija rezervacija)
+        public async Task<IActionResult> Edit(int id, DateTime Datum, TimeSpan Vreme,
+                                              int BrojOsoba, int IDStola,
+                                              string ImeGosta, string PrezimeGosta)
         {
-            if (id != rezervacija.IDRezervacije) return NotFound();
+            var rez = await _context.Rezervacije.FindAsync(id);
+            if (rez == null) return NotFound();
 
-            if (ModelState.IsValid)
+            bool zauzet = await _context.Rezervacije
+                .AnyAsync(r => r.IDStola == IDStola &&
+                               r.Datum == Datum &&
+                               r.IDRezervacije != id);
+
+            if (zauzet)
             {
-                try
-                {
-                    _context.Update(rezervacija);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_context.Rezervacije.Any(e => e.IDRezervacije == rezervacija.IDRezervacije))
-                        return NotFound();
-                    else throw;
-                }
-                return RedirectToAction(nameof(Index));
+                var brojStola = await _context.Stolovi
+                    .Where(s => s.IDStola == IDStola)
+                    .Select(s => s.BrojStola)
+                    .FirstOrDefaultAsync();
+
+                ModelState.AddModelError("", $"Sto br. {brojStola} je već rezervisan za {Datum:d}.");
+                ViewBag.Gosti = new SelectList(await _context.Gosti.ToListAsync(),
+                                               "IDGosta", "ImeGosta", rez.IDGosta);
+                ViewBag.Stolovi = await PopuniStoloveEdit(Datum, IDStola);
+                return View(rez);
             }
 
-            ViewBag.Stolovi = new SelectList(_context.Stolovi, "IDStola", "BrojStola", rezervacija.IDStola);
-            return View(rezervacija);
+            var gost = await _context.Gosti
+                .FirstOrDefaultAsync(g => g.ImeGosta == ImeGosta &&
+                                          g.PrezimeGosta == PrezimeGosta);
+
+            if (gost == null)
+            {
+                gost = new Gost { ImeGosta = ImeGosta, PrezimeGosta = PrezimeGosta };
+                _context.Gosti.Add(gost);
+                await _context.SaveChangesAsync();
+            }
+
+            rez.Datum = Datum;
+            rez.Vreme = Vreme;
+            rez.BrojOsoba = BrojOsoba;
+            rez.IDStola = IDStola;
+            rez.IDGosta = gost.IDGosta;
+
+            _context.Update(rez);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Rezervacija/Delete/5
+        // DELETE
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
-
-            var rezervacija = await _context.Rezervacije
+            var rez = await _context.Rezervacije
                 .Include(r => r.Gost)
                 .Include(r => r.Sto)
                 .FirstOrDefaultAsync(m => m.IDRezervacije == id);
-
-            if (rezervacija == null) return NotFound();
-
-            return View(rezervacija);
+            return rez == null ? NotFound() : View(rez);
         }
 
-        // POST: Rezervacija/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var rezervacija = await _context.Rezervacije.FindAsync(id);
-            if (rezervacija != null)
-            {
-                _context.Rezervacije.Remove(rezervacija);
-                await _context.SaveChangesAsync();
-            }
+            var rez = await _context.Rezervacije.FindAsync(id);
+            if (rez != null) _context.Rezervacije.Remove(rez);
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        // AJAX: osveži stolove (za Create)
+        public async Task<IActionResult> OsveziStolove(DateTime datum)
+        {
+            await PopuniStoloveCreate(datum);
+            return PartialView("_StoloviPartial", ViewBag.Stolovi);
+        }
+
+        // AJAX: osveži stolove (za Edit)
+        public async Task<IActionResult> OsveziStoloveEdit(DateTime datum, int id)
+        {
+            ViewBag.Stolovi = await PopuniStoloveEdit(datum, id);
+            return PartialView("_StoloviPartialEdit", ViewBag.Stolovi);
+        }
+
+        // pomoćna za CREATE (anonimni objekti)
+        private async Task PopuniStoloveCreate(DateTime? zaDatum)
+        {
+            var stolovi = await _context.Stolovi
+                .Select(s => new
+                {
+                    s.IDStola,
+                    Broj = s.BrojStola,
+                    Zauzet = zaDatum.HasValue &&
+                              _context.Rezervacije
+                                  .Any(r => r.IDStola == s.IDStola &&
+                                            r.Datum == zaDatum.Value)
+                })
+                .ToListAsync();
+
+            ViewBag.Stolovi = stolovi;
+        }
+
+        // pomoćna za EDIT (SelectListItem + Disabled)
+        private async Task<List<SelectListItem>> PopuniStoloveEdit(DateTime zaDatum, int izabraniSto)
+        {
+            var stolovi = await _context.Stolovi
+                .Select(s => new
+                {
+                    s.IDStola,
+                    Broj = s.BrojStola,
+                    Zauzet = _context.Rezervacije
+                                .Any(r => r.IDStola == s.IDStola &&
+                                          r.Datum == zaDatum &&
+                                          r.IDRezervacije != izabraniSto)
+                })
+                .ToListAsync();
+
+            return stolovi.Select(x => new SelectListItem
+            {
+                Value = x.IDStola.ToString(),
+                Text = $"Sto {x.Broj}",
+                Selected = x.IDStola == izabraniSto,
+                Disabled = x.Zauzet   // onemogući crvene
+            }).ToList();
+        }
+
+        private bool RezervacijaExists(int id)
+            => _context.Rezervacije.Any(e => e.IDRezervacije == id);
     }
 }

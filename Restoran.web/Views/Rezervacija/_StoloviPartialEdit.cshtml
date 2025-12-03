@@ -1,0 +1,9 @@
+﻿@foreach (dynamic item in Model)
+{
+    <option value="@item.Value"
+            selected="@item.Selected"
+            disabled="@item.Disabled"
+            style="@(item.Disabled ? "color:red" : "color:green")">
+        @item.Text
+    </option>
+}

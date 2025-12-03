@@ -1,0 +1,9 @@
+﻿<select name="IDStola" class="form-control" required>
+    <option value="">-- izaberi sto --</option>
+    @foreach (dynamic s in Model)
+    {
+        <option value="@s.IDStola" style="@(s.Zauzet ? "color:red" : "color:green")">
+            Sto @s.Broj
+        </option>
+    }
+</select>

@@ -1,28 +1,33 @@
-@model Restoran.web.Models.Rezervacija
+﻿@model Restoran.web.Models.Rezervacija
 
 @{
-    ViewData["Title"] = "Unos rezervacije";
+    ViewData["Title"] = "Nova rezervacija";
 }
 
-<h2>Unos rezervacije</h2>
+<h2>Nova rezervacija</h2>
 
-<form action="/Rezervacija/Create" method="post">
+<style>
+    input[type="date"]:invalid::-webkit-datetime-edit {
+        color: transparent;
+    }
+
+    input[type="date"]:focus::-webkit-datetime-edit {
+        color: black;
+    }
+</style>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-2">
+        @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <div>@err.ErrorMessage</div>
+        }
+    </div>
+}
+
+<form asp-action="Create">
     @Html.AntiForgeryToken()
-
-    <div class="form-group">
-        <label>Datum</label>
-        <input name="Datum" type="datetime-local" class="form-control" required />
-    </div>
-
-    <div class="form-group">
-        <label>Vreme</label>
-        <input name="Vreme" type="time" class="form-control" required />
-    </div>
-
-    <div class="form-group">
-        <label>Broj osoba</label>
-        <input name="BrojOsoba" type="number" class="form-control" required />
-    </div>
 
     <div class="form-group">
         <label>Ime gosta</label>
@@ -35,10 +40,50 @@
     </div>
 
     <div class="form-group">
-        <label>Broj stola</label>
-        <select name="IDStola" class="form-control" asp-items="ViewBag.Stolovi"></select>
+        <label>Datum</label>
+        <input name="Datum" type="date" class="form-control"
+               value="@DateTime.Now.ToString("yyyy-MM-dd")" />
     </div>
 
-    <button type="submit" class="btn btn-primary">Kreiraj rezervaciju</button>
-    <a href="/Rezervacija/Index" class="btn btn-secondary">Back to List</a>
+    <div class="form-group">
+        <label>Vreme</label>
+        <input type="time" name="Vreme" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Broj osoba</label>
+        <input type="number" name="BrojOsoba" class="form-control" min="1" required />
+    </div>
+
+    <div class="form-group">
+        <label>Sto</label>
+        <select name="IDStola" class="form-control" required>
+            <option value="">-- izaberi sto --</option>
+            @foreach (var s in ViewBag.Stolovi)
+            {
+                <option value="@s.IDStola" style="@(s.Zauzet ? "color:red" : "color:green")">
+                    Sto @s.Broj
+                </option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sačuvaj</button>
 </form>
+
+<a asp-action="Index">Nazad na listu</a>
+
+<script>
+    function osveziStolove() {
+        const datum = document.querySelector('input[name="Datum"]').value;
+        if (!datum) return;
+        fetch(`/Rezervacija/OsveziStolove?datum=${datum}`)
+            .then(r => r.text())
+            .then(html => {
+                const sel = document.querySelector('select[name="IDStola"]');
+                sel.innerHTML = html;
+            });
+    }
+    document.addEventListener('DOMContentLoaded', osveziStolove);
+    document.querySelector('input[name="Datum"]').addEventListener('change', osveziStolove);
+</script>
