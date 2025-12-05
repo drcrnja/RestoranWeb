@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Restoran.BLL.DTOs.RezervacijaDto>
+
+<h2>Spisak rezervacija</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Vreme</th>
+            <th>Broj osoba</th>
+            <th>Gost</th>
+            <th>Sto</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Datum.ToString("d")</td>
+                <td>@item.Vreme</td>
+                <td>@item.BrojOsoba</td>
+                <td>@(item.ImeGosta) @(item.PrezimeGosta)</td>
+                <td>@item.BrojStola</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IDRezervacije">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IDRezervacije">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Nova rezervacija</a>

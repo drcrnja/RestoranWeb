@@ -1,0 +1,65 @@
+﻿@model Restoran.BLL.DTOs.RezervacijaDto
+
+<h2>Izmena rezervacije</h2>
+
+<style>
+    option:disabled {
+        color: red;
+        background-color: #fdd;
+    }
+</style>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-2">
+        @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <div>@err.ErrorMessage</div>
+        }
+    </div>
+}
+
+<form asp-action="Edit">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="IDRezervacije" />
+
+    <div class="form-group">
+        <label>Datum</label>
+        <input asp-for="Datum" type="date" class="form-control" />
+        <span asp-validation-for="Datum" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Vreme</label>
+        <input asp-for="Vreme" type="time" class="form-control" />
+        <span asp-validation-for="Vreme" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Broj osoba</label>
+        <input asp-for="BrojOsoba" class="form-control" />
+        <span asp-validation-for="BrojOsoba" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Ime gosta</label>
+        <input asp-for="ImeGosta" class="form-control" />
+        <span asp-validation-for="ImeGosta" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Prezime gosta</label>
+        <input asp-for="PrezimeGosta" class="form-control" />
+        <span asp-validation-for="PrezimeGosta" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Broj stola</label>
+        <select asp-for="BrojStola" class="form-control" asp-items="ViewBag.Stolovi"></select>
+        <span asp-validation-for="BrojStola" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sačuvaj</button>
+</form>
+
+<a asp-action="Index">Nazad na listu</a>
