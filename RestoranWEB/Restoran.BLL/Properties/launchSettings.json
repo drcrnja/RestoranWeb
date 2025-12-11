@@ -1,7 +1,8 @@
 {
   "profiles": {
     "Restoran.BLL": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "nativeDebugging": false
     },
     "Profile 1": {
       "commandName": "Executable",
@@ -14,6 +15,10 @@
     "Profile 3": {
       "commandName": "Executable",
       "executablePath": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\RestoranWEB\\RestoranWEB.slnx"
+    },
+    "Profile 4": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Restoran.MVC.csproj.user"
     }
   }
 }

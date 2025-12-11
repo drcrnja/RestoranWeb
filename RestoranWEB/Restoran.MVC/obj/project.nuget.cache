@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H9Rbp+cBkKk=",
+  "dgSpecHash": "G65bn/q56m8=",
   "success": true,
   "projectFilePath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Restoran.MVC.csproj",
   "expectedPackageFiles": [
@@ -61,15 +61,5 @@
     "C:\\Users\\drcrn\\.nuget\\packages\\system.security.permissions\\9.0.0\\system.security.permissions.9.0.0.nupkg.sha512",
     "C:\\Users\\drcrn\\.nuget\\packages\\system.windows.extensions\\9.0.0\\system.windows.extensions.9.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Restoran.MVC.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Restoran.MVC.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

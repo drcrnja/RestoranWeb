@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Restoran.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d2877b20907a4d4122ead13f61f23deac73f555")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa46657cc2b3d4901dedc69f5652324c115b00d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Restoran.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Restoran.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

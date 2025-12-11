@@ -4,6 +4,6 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>Restoran.BLL</ActiveDebugProfile>
+    <ActiveDebugProfile>Profile 4</ActiveDebugProfile>
   </PropertyGroup>
 </Project>
