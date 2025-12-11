@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Restoran.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa46657cc2b3d4901dedc69f5652324c115b00d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f6bab3c5625406672a7b0a761e15f91c7503d2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Restoran.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Restoran.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -96,6 +96,7 @@ namespace Restoran.MVC.Controllers
             if (dto == null) return NotFound();
             return View(dto);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -105,5 +106,3 @@ namespace Restoran.MVC.Controllers
         }
     }
 }
-
-    

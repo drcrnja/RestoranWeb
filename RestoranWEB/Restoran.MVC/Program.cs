@@ -3,23 +3,47 @@ using Restoran.BLL.Mappings;
 using Restoran.BLL.Services;
 using Restoran.DAL;
 using Restoran.DAL.UnitOfWork;
+using Restoran.DAL.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// EF + AutoMapper + UnitOfWork + Servisi
+// SQLite + AutoMapper + UnitOfWork + Servisi
 builder.Services.AddDbContext<RestoranContext>(opts =>
-    opts.UseSqlServer(builder.Configuration.GetConnectionString("RestoranConnection")));
+    opts.UseSqlite("Data Source=restoran.db"));
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IRezervacijaService, RezervacijaService>();
 
-// NOVI AutoMapper 15.1.0 – lambda umesto typeof(Program)
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
 
 var app = builder.Build();
+
+// Seed podaci (20 stolova)
+using (var scope = app.Services.CreateScope())
+{
+    var ctx = scope.ServiceProvider.GetRequiredService<RestoranContext>();
+    ctx.Database.EnsureCreated();
+
+    if (!ctx.Stolovi.Any())
+    {
+        var lokacije = new[] { "Prozor", "Sredina", "Kraj", "Ugao", "Terasa" };
+        var rnd = new Random();
+
+        for (int i = 1; i <= 20; i++)
+        {
+            ctx.Stolovi.Add(new Sto
+            {
+                BrojStola = i,
+                BrojMesta = 4,
+                Lokacija = lokacije[rnd.Next(lokacije.Length)]
+            });
+        }
+        ctx.SaveChanges();
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -30,9 +54,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(

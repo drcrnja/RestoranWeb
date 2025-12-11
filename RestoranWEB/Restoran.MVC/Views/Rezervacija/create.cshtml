@@ -57,7 +57,12 @@
 
     <div class="form-group">
         <label>Broj osoba</label>
-        <input asp-for="BrojOsoba" class="form-control" />
+        <select asp-for="BrojOsoba" class="form-control">
+            @for (int i = 1; i <= 4; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
         <span asp-validation-for="BrojOsoba" class="text-danger"></span>
     </div>
 

@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\controllers\\rezervacijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\controllers\\rezervacijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\views\\rezervacija\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\views\\rezervacija\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\views\\rezervacija\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\views\\rezervacija\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DBC2AE22-D571-077B-B4D5-680D2F496ED5}|Restoran.BLL\\Restoran.BLL.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.bll\\services\\rezervacijaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBC2AE22-D571-077B-B4D5-680D2F496ED5}|Restoran.BLL\\Restoran.BLL.csproj|solutionrelative:restoran.bll\\services\\rezervacijaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\views\\rezervacija\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\views\\rezervacija\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\controllers\\rezervacijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\controllers\\rezervacijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\views\\rezervacija\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\views\\rezervacija\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\views\\rezervacija\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -31,20 +47,8 @@
       "RelativeMoniker": "D:0:0:{9F05F270-E8E1-F814-0027-B5D30D08D5AA}|Restoran.DAL\\Restoran.DAL.csproj|solutionrelative:restoran.dal\\repositories\\igostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\views\\rezervacija\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\views\\rezervacija\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\views\\rezervacija\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|solutionrelative:restoran.mvc\\views\\rezervacija\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91BE3169-5F62-56B9-60A1-C54D08B4944E}|Restoran.MVC\\Restoran.MVC.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.mvc\\restoran.mvc.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -113,6 +117,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9F05F270-E8E1-F814-0027-B5D30D08D5AA}|Restoran.DAL\\Restoran.DAL.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.dal\\restoran.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9F05F270-E8E1-F814-0027-B5D30D08D5AA}|Restoran.DAL\\Restoran.DAL.csproj|solutionrelative:restoran.dal\\restoran.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F05F270-E8E1-F814-0027-B5D30D08D5AA}|Restoran.DAL\\Restoran.DAL.csproj|c:\\users\\drcrn\\desktop\\github\\restoranweb\\restoranweb\\restoran.dal\\migrations\\20251211103059_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F05F270-E8E1-F814-0027-B5D30D08D5AA}|Restoran.DAL\\Restoran.DAL.csproj|solutionrelative:restoran.dal\\migrations\\20251211103059_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,11 +130,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\Delete.cshtml",
               "RelativeDocumentMoniker": "Restoran.MVC\\Views\\Rezervacija\\Delete.cshtml",
@@ -138,32 +146,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "RezervacijaService.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.BLL\\Services\\RezervacijaService.cs",
               "RelativeDocumentMoniker": "Restoran.BLL\\Services\\RezervacijaService.cs",
               "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.BLL\\Services\\RezervacijaService.cs",
               "RelativeToolTip": "Restoran.BLL\\Services\\RezervacijaService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwCIAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAxwDIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T14:12:19.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T14:12:19.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RezervacijaController.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Controllers\\RezervacijaController.cs",
               "RelativeDocumentMoniker": "Restoran.MVC\\Controllers\\RezervacijaController.cs",
               "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Controllers\\RezervacijaController.cs",
               "RelativeToolTip": "Restoran.MVC\\Controllers\\RezervacijaController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAmwGgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAADwv2kAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:20:03.084Z"
+              "WhenOpened": "2025-12-03T12:20:03.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\Index.cshtml",
               "RelativeDocumentMoniker": "Restoran.MVC\\Views\\Rezervacija\\Index.cshtml",
@@ -175,7 +183,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "Restoran.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Program.cs",
+              "RelativeToolTip": "Restoran.MVC\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwD8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T14:15:36.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "create.cshtml",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
+              "RelativeDocumentMoniker": "Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
+              "RelativeToolTip": "Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswE0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T14:21:28.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
+              "RelativeDocumentMoniker": "Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
+              "RelativeToolTip": "Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwEUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T14:22:06.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Restoran.MVC\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\appsettings.Development.json",
+              "RelativeToolTip": "Restoran.MVC\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T10:26:29.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20251211103059_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Migrations\\20251211103059_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Restoran.DAL\\Migrations\\20251211103059_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Migrations\\20251211103059_InitialCreate.cs",
+              "RelativeToolTip": "Restoran.DAL\\Migrations\\20251211103059_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T10:30:59.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IGostRepository.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Repositories\\IGostRepository.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Repositories\\IGostRepository.cs",
@@ -187,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "RestoranContext.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\RestoranContext.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\RestoranContext.cs",
@@ -199,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Restoran.MVC.csproj",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Restoran.MVC.csproj",
               "RelativeDocumentMoniker": "Restoran.MVC\\Restoran.MVC.csproj",
@@ -211,19 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Program.cs",
-              "RelativeDocumentMoniker": "Restoran.MVC\\Program.cs",
-              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Program.cs",
-              "RelativeToolTip": "Restoran.MVC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T14:15:36.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\appsettings.json",
               "RelativeDocumentMoniker": "Restoran.MVC\\appsettings.json",
@@ -235,31 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
-              "RelativeDocumentMoniker": "Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
-              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
-              "RelativeToolTip": "Restoran.MVC\\Views\\Rezervacija\\edit.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAADwvykAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T14:22:06.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "create.cshtml",
-              "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
-              "RelativeDocumentMoniker": "Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
-              "ToolTip": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
-              "RelativeToolTip": "Restoran.MVC\\Views\\Rezervacija\\create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T14:21:28.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Restoran.MVC",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Restoran.MVC.csproj",
               "RelativeDocumentMoniker": "Restoran.MVC\\Restoran.MVC.csproj",
@@ -270,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\UnitOfWork\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\UnitOfWork\\UnitOfWork.cs",
@@ -282,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\UnitOfWork\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\UnitOfWork\\IUnitOfWork.cs",
@@ -294,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "StoRepository.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Repositories\\StoRepository.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Repositories\\StoRepository.cs",
@@ -306,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "RezervacijaRepository.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Repositories\\RezervacijaRepository.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Repositories\\RezervacijaRepository.cs",
@@ -318,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IStoRepository.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Repositories\\IStoRepository.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Repositories\\IStoRepository.cs",
@@ -330,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IRezervacijaRepository.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Repositories\\IRezervacijaRepository.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Repositories\\IRezervacijaRepository.cs",
@@ -342,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GostRepository.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Repositories\\GostRepository.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Repositories\\GostRepository.cs",
@@ -354,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Rezervacija.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Entities\\Rezervacija.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Entities\\Rezervacija.cs",
@@ -366,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "sto.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Entities\\sto.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Entities\\sto.cs",
@@ -378,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "gost.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Entities\\gost.cs",
               "RelativeDocumentMoniker": "Restoran.DAL\\Entities\\gost.cs",
@@ -390,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IRezervacijaService.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.BLL\\Services\\IRezervacijaService.cs",
               "RelativeDocumentMoniker": "Restoran.BLL\\Services\\IRezervacijaService.cs",
@@ -402,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.BLL\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Restoran.BLL\\Mapping\\MappingProfile.cs",
@@ -414,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "RezervacijaDto.cs",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.BLL\\DTOs\\RezervacijaDto.cs",
               "RelativeDocumentMoniker": "Restoran.BLL\\DTOs\\RezervacijaDto.cs",
@@ -426,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Restoran.MVC\\Views\\Shared\\_Layout.cshtml",
@@ -438,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Restoran.BLL.csproj",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.BLL\\Restoran.BLL.csproj",
               "RelativeDocumentMoniker": "Restoran.BLL\\Restoran.BLL.csproj",
@@ -450,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Restoran.DAL.csproj",
               "DocumentMoniker": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Restoran.DAL.csproj",
               "RelativeDocumentMoniker": "Restoran.DAL\\Restoran.DAL.csproj",
