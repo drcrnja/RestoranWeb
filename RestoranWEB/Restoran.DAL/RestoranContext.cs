@@ -35,10 +35,10 @@ namespace Restoran.DAL
                 .HasForeignKey(r => r.IDStola)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // **NAZIVI TABELA – da odgovaraju SQL-u**
+            
             b.Entity<Gost>().ToTable("Gost");
             b.Entity<Sto>().ToTable("Sto");
-            b.Entity<Rezervacija>().ToTable("Rezervacija");   // NE Rezervacije
+            b.Entity<Rezervacija>().ToTable("Rezervacija");  
         }
     }
 }

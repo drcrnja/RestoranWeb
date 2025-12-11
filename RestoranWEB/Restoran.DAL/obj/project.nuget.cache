@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SZNPb4Gyubg=",
+  "dgSpecHash": "BeE0DXd/h9I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\drcrn\\Desktop\\Seminarski radovi\\Arhitektura\\RestoranWEB\\Restoran.DAL\\Restoran.DAL.csproj",
+  "projectFilePath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Restoran.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\drcrn\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\drcrn\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
@@ -71,5 +71,15 @@
     "C:\\Users\\drcrn\\.nuget\\packages\\system.security.permissions\\9.0.0\\system.security.permissions.9.0.0.nupkg.sha512",
     "C:\\Users\\drcrn\\.nuget\\packages\\system.windows.extensions\\9.0.0\\system.windows.extensions.9.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Restoran.DAL.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\drcrn\\Desktop\\Github\\RestoranWeb\\RestoranWEB\\Restoran.DAL\\Restoran.DAL.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

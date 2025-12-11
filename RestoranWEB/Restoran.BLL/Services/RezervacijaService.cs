@@ -9,6 +9,7 @@ namespace Restoran.BLL.Services
     {
         private readonly IUnitOfWork _uow;
         private readonly IMapper _mapper;
+
         public RezervacijaService(IUnitOfWork uow, IMapper mapper)
         {
             _uow = uow;
@@ -16,7 +17,7 @@ namespace Restoran.BLL.Services
         }
 
         public async Task<List<RezervacijaDto>> GetAllAsync() =>
-            _mapper.Map<List<RezervacijaDto>>(await _uow.Rezervacije.GetAllAsync() );
+            _mapper.Map<List<RezervacijaDto>>(await _uow.Rezervacije.GetAllAsync());
 
         public async Task<RezervacijaDto?> GetByIdAsync(int id) =>
             _mapper.Map<RezervacijaDto>(await _uow.Rezervacije.GetByIdAsync(id));
@@ -30,8 +31,8 @@ namespace Restoran.BLL.Services
                 throw new InvalidOperationException($"Sto {dto.BrojStola} je zauzet.");
 
             var gost = await _uow.Gosti
-     .FirstOrDefaultAsync(g => g.ImeGosta == dto.ImeGosta &&
-                               g.PrezimeGosta == dto.PrezimeGosta);
+                .FirstOrDefaultAsync(g => g.ImeGosta == dto.ImeGosta &&
+                                          g.PrezimeGosta == dto.PrezimeGosta);
 
             if (gost == null)
             {
@@ -41,11 +42,12 @@ namespace Restoran.BLL.Services
                     PrezimeGosta = dto.PrezimeGosta
                 };
                 await _uow.Gosti.AddAsync(gost);
-                await _uow.SaveChangesAsync();   // **MORAŠ SAČUVATI DA BI DOBIO ID**
-            
-        }
+                await _uow.SaveChangesAsync();
+            }
 
-            var sto = await _uow.Stolovi.GetByIdAsync(dto.BrojStola);
+            var sto = await _uow.Stolovi.GetAllAsync()
+                .ContinueWith(t => t.Result.FirstOrDefault(s => s.BrojStola == dto.BrojStola));
+
             if (sto == null) throw new KeyNotFoundException("Sto ne postoji.");
 
             var rez = new Rezervacija
@@ -75,12 +77,42 @@ namespace Restoran.BLL.Services
             if (zauzet)
                 throw new InvalidOperationException($"Sto {dto.BrojStola} je zauzet.");
 
-            _mapper.Map(dto, rez);
+            rez.Datum = dto.Datum;
+            rez.Vreme = dto.Vreme;
+            rez.BrojOsoba = dto.BrojOsoba;
+
+            var gost = await _uow.Gosti
+                .FirstOrDefaultAsync(g => g.ImeGosta == dto.ImeGosta &&
+                                          g.PrezimeGosta == dto.PrezimeGosta);
+
+            if (gost == null)
+            {
+                gost = new Gost
+                {
+                    ImeGosta = dto.ImeGosta,
+                    PrezimeGosta = dto.PrezimeGosta
+                };
+                await _uow.Gosti.AddAsync(gost);
+                await _uow.SaveChangesAsync();
+            }
+
+            rez.IDGosta = gost.IDGosta;
+
+            var sto = await _uow.Stolovi.GetAllAsync()
+                .ContinueWith(t => t.Result.FirstOrDefault(s => s.BrojStola == dto.BrojStola));
+
+            if (sto == null) throw new KeyNotFoundException("Sto ne postoji.");
+
+            rez.IDStola = sto.IDStola;
+
             await _uow.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
         {
+            var rez = await _uow.Rezervacije.GetByIdAsync(id);
+            if (rez == null) throw new KeyNotFoundException("Rezervacija ne postoji.");
+
             await _uow.Rezervacije.DeleteAsync(id);
             await _uow.SaveChangesAsync();
         }

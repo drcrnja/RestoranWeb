@@ -89,12 +89,21 @@ namespace Restoran.MVC.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var dto = await _service.GetByIdAsync(id);
+            if (dto == null) return NotFound();
+            return View(dto);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _service.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
     }
 }
+
+    
