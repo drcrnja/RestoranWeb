@@ -1,6 +1,7 @@
 ﻿using Restoran.DAL.Entities;
 
 namespace Restoran.DAL.Entities
+    //klasa za sto
 {
     public class Sto
     {

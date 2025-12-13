@@ -1,5 +1,7 @@
 ﻿namespace Restoran.DAL.Entities
 {
+    //klasa za rezervaciju
+    //spaja gosta i sto
     public class Rezervacija
     {
         public int IDRezervacije { get; set; }

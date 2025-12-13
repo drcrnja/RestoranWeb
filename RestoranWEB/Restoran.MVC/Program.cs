@@ -7,10 +7,10 @@ using Restoran.DAL.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 builder.Services.AddControllersWithViews();
 
-// SQLite + AutoMapper + UnitOfWork + Servisi
+
 builder.Services.AddDbContext<RestoranContext>(opts =>
     opts.UseSqlite("Data Source=restoran.db"));
 
@@ -21,7 +21,6 @@ builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
 
 var app = builder.Build();
 
-// Seed podaci (20 stolova)
 using (var scope = app.Services.CreateScope())
 {
     var ctx = scope.ServiceProvider.GetRequiredService<RestoranContext>();

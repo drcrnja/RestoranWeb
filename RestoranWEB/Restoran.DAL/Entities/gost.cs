@@ -2,6 +2,7 @@
 
 namespace Restoran.DAL.Entities
 {
+    //klasa za sebicnog gosta
     public class Gost
     {
         public int IDGosta { get; set; }
